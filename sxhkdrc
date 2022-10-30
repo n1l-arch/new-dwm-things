@@ -1,0 +1,48 @@
+#ss
+
+shift+alt+1
+	maim --hidecursor | xclip -selection clipboard -t image/png
+  
+shift+alt+2
+	maim --hidecursor -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+  
+shift+alt+3
+	maim -s --hidecursor |xclip -selection clipboard -t image/png
+
+
+
+
+#audio
+
+XF86AudioMute
+	pavucontrol
+
+shift+XF86AudioRaiseVolume
+	brightnessctl set 10%+
+  
+shift+XF86AudioLowerVolume
+	brightnessctl set 10%-
+
+
+
+
+#brightness
+
+XF86AudioLowerVolume
+	pamixer -d 10
+
+XF86AudioRaiseVolume
+	pamixer -i 10
+
+
+
+
+#idk
+
+shift+alt+0
+	alacritty -e sh -c "curl wttr.in && sleep infinity"
+  
+
+
+
+
