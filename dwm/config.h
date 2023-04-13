@@ -9,14 +9,14 @@ static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Source code pro:size=10" };
 static const char dmenufont[]       = "Source code pro:size=10";
-static const char col_gray1[]       = "#1c1d1e";
-static const char col_gray2[]       = "#1c1c1c";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#b2c2c4";
-static const char col_cyan[]        = "#7c8789";
+static const char col_gray1[]       = "#181818";
+static const char col_gray2[]       = "#181818";
+static const char col_gray3[]       = "#d8d8d8";
+static const char col_gray4[]       = "#f8f8f8";
+static const char col_cyan[]        = "#d8d8d8";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -33,7 +33,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Steam",    NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "element-desktop",  NULL,       NULL,       1 << 1,            0,           -1 },
+	{ "SchildiChat",  NULL,       NULL,       1 << 1,            0,           -1 },
 };
 
 /* layout(s) */
